@@ -5,10 +5,10 @@ import {
   ArrowRight,
   BarChart3,
   Bolt,
-  ChatBubbleLeftRight,
+  CloudLightning,
   Globe,
-  Lightning,
   Mail,
+  MessageSquare,
   ShieldCheck,
   Sparkles,
   Users,
@@ -21,7 +21,7 @@ const services = [
   { title: "SEO", description: "Technical, content, and local SEO to improve rankings and organic traffic.", icon: BarChart3 },
   { title: "Social Media Marketing", description: "Community-driven social growth with data-led content and ads.", icon: Sparkles },
   { title: "Email Marketing", description: "Personalized nurture flows that convert cold traffic into loyal buyers.", icon: Mail },
-  { title: "WhatsApp Marketing", description: "Direct response campaigns using WhatsApp for immediate lead engagement.", icon: ChatBubbleLeftRight },
+  { title: "WhatsApp Marketing", description: "Direct response campaigns using WhatsApp for immediate lead engagement.", icon: MessageSquare },
 ];
 
 const industries = [
@@ -237,7 +237,7 @@ export default function Home() {
             {industries.map((industry) => (
               <div key={industry} className="rounded-3xl border border-slate-200/70 bg-slate-50 p-6 text-slate-900 shadow-sm transition hover:-translate-y-1 hover:border-slate-300">
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-600 text-white">
-                  <Lightning className="h-6 w-6" />
+                  <CloudLightning className="h-6 w-6" />
                 </div>
                 <p className="font-semibold">{industry}</p>
               </div>
